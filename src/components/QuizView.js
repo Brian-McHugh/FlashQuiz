@@ -6,17 +6,31 @@ Quiz of cards in Deck
 */
 
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, StyleSheet, View, Text } from 'react-native';
 //import  { helperFunc } from '../utils/helpers';
 
 export default class QuizView extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Question</Text>
+      <View style={styles.container}>
+        <Text style={styles.text}>Question</Text>
         <Button title="Show Answer" />
         <Button title="Next Question"/>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginLeft: 10,
+    marginRight: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  text: {
+    color: 'black'
+  }
+});
