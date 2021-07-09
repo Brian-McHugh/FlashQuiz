@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Platform, StyleSheet, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, Platform, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import DeckListView from './components/DeckListView';
 
